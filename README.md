@@ -16,6 +16,7 @@ Creating an Excel spreadsheet that conforms to the DECIPHER bulk variant upload 
   * **SEX** for information indicating the sex of the patient
 
 3. A \*nix operating system. This script was written and tested on a CentOS 7 operating system
+4. Python2.7
   
 ### Usage
 1. Download the GitHub repository:
@@ -24,10 +25,20 @@ git clone https://github.com/WMRGL/Variant-list-to-DECIPHER-transform.git
 ```
 2. Create a virtual envirnment:
 ```bash
-
+virtualenv -p python2.7 <venv_name>
 ```
-
-The script can be run as follows:
+3. Activate the virtual environment:
+```bash
+source <venv_name>/bin/activate
+```
+4. Update pip and install requirements:
+```bash
+pip install -U pip
+pip instal -r requirements.txt
+```
+5. Download sex data from Shire for all TSO patients as instructed in SOP BI 01.01.16.
+6. Open the *transform_variant_list_to_decipher_format.py* file and change the paths to the variant list (var_list), patient sex data (chr_sex), and the file to which you would like to write the output (output_file). These are in lines 10-12 of the file. 
+7. Run the script as follows:
 ```bash
 python2.7 transform_variant_list_to_decipher_format.py
 ```
