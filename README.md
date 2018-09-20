@@ -42,6 +42,10 @@ pip instal -r requirements.txt
 ```bash
 python2.7 transform_variant_list_to_decipher_format.py
 ```
+8. Deactivate the virtual environment when the script is don processing the data:
+```bash
+deactivate
+```
 
 ### Expected Output
 Output will be in the form of an Excel spread sheet with the followong columns (in order and with examples):
