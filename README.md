@@ -10,7 +10,7 @@ Creating an Excel spreadsheet that conforms to the DECIPHER bulk variant upload 
   *	**GENE** for information that populates the Gene name column
   *	**SAMPLE** for information that populates the Internal Reference column
   
-2. **Lab Numbers and Sex List(s)** obtained from Shire following the steps detailed in SOP BI 01.01.16. The main columns that are required are as follows:
+2. **Lab Numbers and Sex List(s)** obtained from Shire following the steps detailed in **SOP BI 01.01.16**. The main columns that are required are as follows:
 
   * **LABNO** for patient lab numbers
   * **SEX** for information indicating the sex of the patient
