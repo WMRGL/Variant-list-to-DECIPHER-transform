@@ -2,12 +2,29 @@
 Creating an Excel spreadsheet that conforms to the DECIPHER bulk variant upload format
 
 ## Overview
-This script is to be used as detailed in SOP BI 01.01.16.
+### Requirements
 
+1. **The Rare Diseases Variants list**, a live list which gets amended regularly. The columns in this list that are used to populate the DECIPHER-formatted list are as follows:
 
-## Usage
+  *	**HGVS-refGene** or **HGVS-UCSC**  for information that populates the Transcript and HGVS code columns
+  *	**GENE** for information that populates the Gene name column
+  *	**SAMPLE** for information that populates the Internal Reference column
+  
+2. **Lab Numbers and Sex List(s)** obtained from Shire following the steps detailed in SOP BI 01.01.16. The main columns that are required are as follows:
 
-## Expected Output
+  * **LABNO** for patient lab numbers
+  * **SEX** for information indicating the sex of the patient
+
+3. A \*nix operating system. This script was written and tested on a CentOS 7 operating system
+  
+### Usage
+1. Download the GitHub repository
+The script can be run as follows:
+```bash
+python2.7 transform_variant_list_to_decipher_format.py
+```
+
+### Expected Output
 Output will be in the form of an Excel spread sheet with the followong columns (in order and with examples):
 
 1.	**Internal reference number or ID** (Lab ID)
