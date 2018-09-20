@@ -18,7 +18,15 @@ Creating an Excel spreadsheet that conforms to the DECIPHER bulk variant upload 
 3. A \*nix operating system. This script was written and tested on a CentOS 7 operating system
   
 ### Usage
-1. Download the GitHub repository
+1. Download the GitHub repository:
+```bash
+git clone https://github.com/WMRGL/Variant-list-to-DECIPHER-transform.git
+```
+2. Create a virtual envirnment:
+```bash
+
+```
+
 The script can be run as follows:
 ```bash
 python2.7 transform_variant_list_to_decipher_format.py
