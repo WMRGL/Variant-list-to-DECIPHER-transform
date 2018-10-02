@@ -48,7 +48,7 @@ deactivate
 ```
 
 ### Expected Output
-Output will be in the form of an Excel spread sheet with the followong columns (in order and with examples):
+Output will be in the form of an Excel spread sheet with the following columns (in order and with examples):
 
 1.	**Internal reference number or ID** (Lab ID)
 2.	**HGVS code** (NM_001159673.1:c.1224_1225insC)
